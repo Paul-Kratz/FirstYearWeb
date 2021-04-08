@@ -3,71 +3,88 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Activities | New Zealand</title>
-		<link rel="stylesheet" type="text/css" href="styleA.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Paul Kratz">
+		<meta name="description" content="Contact page for website">
+		<meta name="keywords" content="contact, address, information, New Zealand">
 	</head>
 	<body>
 		<div class="header">
-			<div id="logo">
-			  <img src="Images/fern2.png" alt="Logo" height="100px" width="100px">
+			<div class="logo">
+			  <img src="Images/rsz_fern2.png" alt="Logo">
 			</div>
-			<div id="title">
+			<div class="title">
 				<h1>New Zealand</h1>
 			</div>
 			<nav>
 			  <ul>
-					<li><a href="home.html">Home</a></li>
+					<li><a href="index2.html">Home</a></li>
 					<li><a href="locations.html">Locations</a></li>
 					<li><a href="activities.html">Activities</a></li>
-					<li><a href="other.html">Other</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 		
 		<main>
-			<h1>Activities in New Zealand</h1>
-			<h2>Skydiving</h2>
-			
-			<!--Body content. Sorrounding div to be flex container-->
-			<div class="main-container">
-				<section id="image">
-					<img src="Images/skydiving.jpg" alt="image" height="450px">
+			<h1 class="activities-headings" style="font-size:40px">Activities in New Zealand</h1>
+			<!--SKYDIVING-->
+			<h2 class="activities-headings">Skydiving</h2>
+			<!--Body content. Sorrounding section to be flex container-->
+			<section class="main-container">
+				
+				<section class="activities-image">
+					<img src="Images/skydiving.jpg" alt="image" width="100%">
 				</section>
-				<section id="text">
+				
+				<section class="facts">
+					<ul>
+						<li>Skydiving is popular all over New Zealand</li>
+						<li>There are over 20 places to jump</li>
+						<li>You can jump from 10,000, 13,000 and 15,000ft</li>
+						<li>Prices range from $200 to upwards of $500 per jump</li>
+						<li>It is very weather dependant so check the forecast</li>
+					</ul>
+				</section>
+				
+				<section class="text">
 					<p>Welcome to the rush of skydiving. There is nothing like skydiving for sheer heart-stopping adrenalin and adventure and there is no place like New Zealand to do it.</p>
-					</br>
 					<p>New Zealand's magnificent landscapes take on an extra dimension when you’re 12,000 feet in the air. Skydive in <a href="http://www.skydivewanaka.com/">Lake Wanaka</a> , <a href="http://www.nzoneskydive.co.nz/tandem-skydive/skydive-prices">Queenstown</a> or <a href="http://www.skydivetaupo.co.nz/">Taupo</a> and you will look from the vastness of the Central Otago high country to the snow-capped mountains surrounding the jewel-like lakes. At the other end of the country, Lake Taupo has the largest commercial drop zone in the world and stunning views of volcanoes, forests and the lake itself. A Bay of Plenty skydive flight will take you over gleaming waters and geothermal wonders. </p>
-					</br>
 					<p>There are many skydiving operations throughout New Zealand and all offer tandem jumps. You’ll have experienced skydivers taking you-step-by-step through what to do on your jump and what to expect. If you’re a skydiver yourself don’t forget to bring your licence.</p>
 				</section>
 				
-			</div>
-			
-			<h2>Bungee Jumping</h2>
-			<div class="main-container">
-				<section id="image" style="order: 2">
-					<img src="Images/skydiving.jpg" alt="image" height="450px">
+			</section>
+	
+			<!--BUNGEE JUMPING -->
+			<h2 class="activities-headings">Bungee Jumping</h2>
+			<section class="main-container">
+				
+				<section class="facts">
+					<ul>
+						<li>New Zealand boasts the worlds first commercial Bungee Jump.</li>
+						<li>There are over 20 places to jump.</li>
+						<li>The highest jump is in Queenstown with a height of 134m.</li>
+						<li>Prices range from around $200 per jump with extra jumps being relatively cheap</li>
+						<li>A variation called a Canyon Swing </li>
+					</ul>	
 				</section>
-				<section id="text" style="order: 1">
+				
+				<section class="activities-image">
+					<img src="Images/bungeeJump.jpg" alt="image" width="100%" height="285px">
+				</section>
+				
+				<section class="text">
 					<p>Welcome to the rush of skydiving. There is nothing like skydiving for sheer heart-stopping adrenalin and adventure and there is no place like New Zealand to do it.</p>
-					</br>
 					<p>New Zealand's magnificent landscapes take on an extra dimension when you’re 12,000 feet in the air. Skydive in <a href="http://www.skydivewanaka.com/">Lake Wanaka</a> , <a href="http://www.nzoneskydive.co.nz/tandem-skydive/skydive-prices">Queenstown</a> or <a href="http://www.skydivetaupo.co.nz/">Taupo</a> and you will look from the vastness of the Central Otago high country to the snow-capped mountains surrounding the jewel-like lakes. At the other end of the country, Lake Taupo has the largest commercial drop zone in the world and stunning views of volcanoes, forests and the lake itself. A Bay of Plenty skydive flight will take you over gleaming waters and geothermal wonders. </p>
-					</br>
 					<p>There are many skydiving operations throughout New Zealand and all offer tandem jumps. You’ll have experienced skydivers taking you-step-by-step through what to do on your jump and what to expect. If you’re a skydiver yourself don’t forget to bring your licence.</p>
 				</section>
 				
-			</div>
-		<section id="more-info"></section>
+			</section>
 		</main>
-		<script>
-			function myMap() 
-			{
-			var mapProp= {
-			center:new google.maps.LatLng(-36.8485, 174.7633),
-			zoom:10,
-			};
-			var map=new google.maps.Map(document.getElementById("more-info"),mapProp);
-			}
-		</script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAg_oiB7iKfUo79BnhDNQWzQBYMokrjLw&callback=myMap"></script>
+		<footer>
+			<p>This webpage was made as a college project. All Images used are my own. Copyright &copy; John Doe @2017 </p>
+    </footer>
 	</body>
 </html>
