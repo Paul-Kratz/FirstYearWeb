@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*Header content */
+.header
+{
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	/*background: linear-gradient(#d1d1d1, #a2a2a2);*/
+	background: linear-gradient(#222020, #626060);
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 0 15px;
+	border-radius: 10px;
+}
+#logo
+{
+	flex: 1 0 16%;
+	order: 1;
+
+}
+#title
+{
+	flex: 3 3 50%;
+	padding-top: 30px;
+	margin-bottom: 0px;
+	order: 2;
+}
+#title h1
+{
+	font-size: 50px;
+	color: white;
+}
+nav
+{
+	flex: 2 2 33%;
+	order: 3;
+}
+nav ul
+{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+nav ul li
+{
+	flex: 1 0 20%;
+	padding: 10px;
+}
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+}
+nav ul li:hover
+{
+	background: linear-gradient(#a2a2a2, #d1d1d1);
+}
+
+/*Body Content*/
+
+main
+{
+	width: 70%;
+	margin: 0 auto;
+	background-color: white;
+}
+main h1
+{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 40px;
+}
+main h2
+{
+	margin-top: 25px;
+	text-align: center;
+	font-size: 25px;
+}
+.main-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 30px;
+	justify-content: center;
+}
+#image
+{
+	flex: 1;
+}
+#text
+{
+	flex: 1;
+	padding: 10px;
+	min-width: 200px;
+}
+#text p
+{
+	text-align: center;
+	font-size: 15px;
+}
+#more-info
+{
+	width: 100%;
+	height: 200px;
+}
+body
+{
+	background: linear-gradient(#3c3939, white);
+	background-repeat: repeat-x;
+	/*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
